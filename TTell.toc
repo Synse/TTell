@@ -1,0 +1,7 @@
+## Interface: 30300
+## Title: TTell
+## Notes: Shortcuts for whispering your current target
+## Author: Matt646
+## Version: 3.00
+TTell.lua
+TTell.xml
