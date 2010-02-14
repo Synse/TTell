@@ -2,9 +2,6 @@
 BINDING_HEADER_TTELL = "TTell"
 BINDING_NAME_TELLTARGET = "Whisper Target"
 
--- local variables
-local version = GetAddOnMetadata("TTell", "Version");
-
 function TTell_OnLoad(self)
 	-- register slash commands
 	SlashCmdList["TTELL_TELLTARGET"] = function(message)
@@ -29,7 +26,7 @@ function TTell_OnEvent(self, event, ...)
 	if (event == "ADDON_LOADED") then
 		local addonName = select(1, ...);
 		if (addonName == "TTell") then
-			TTell_AddOnMessage("version " .. version .. " loaded.");
+			TTell_AddOnMessage(" loaded.");
 		end
 		return
 	end
@@ -89,7 +86,7 @@ end
 
 function TTell_GetTargetName()
 	local name, realm = UnitName("target");
-	if (realm ~= nil) then
+	if (realm:len() > 0 and realm ~= nil) then
 		local realm = realm:gsub("%s", "");
 		return string.join("-", name, realm);
 	end
