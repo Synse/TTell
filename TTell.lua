@@ -86,7 +86,7 @@ end
 
 function TTell_GetTargetName()
 	local name, realm = UnitName("target");
-	if (realm:len() > 0 and realm ~= nil) then
+	if (realm ~= nil and realm:len() > 0) then
 		local realm = realm:gsub("%s", "");
 		return string.join("-", name, realm);
 	end
