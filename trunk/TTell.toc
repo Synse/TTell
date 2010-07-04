@@ -2,6 +2,5 @@
 ## Title: TTell
 ## Notes: Shortcuts for whispering your current target
 ## Author: Matt646
-## Version: 3.01
+## Version: 3.10
 TTell.lua
-TTell.xml
