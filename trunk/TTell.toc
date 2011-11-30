@@ -1,6 +1,6 @@
-## Interface: 40000
+## Interface: 40300
 ## Title: TTell
 ## Notes: Shortcuts for whispering your current target
 ## Author: Matt646
-## Version: 3.11
+## Version: 3.12
 TTell.lua

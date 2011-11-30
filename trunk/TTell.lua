@@ -26,7 +26,7 @@ local function TTell_OnSpacePressed(editBox)
 	-- match commands
 	if (editBoxText:match("^/[tw]t $")) then
 		TTell_TellTarget();
-	elseif (editBoxText:match("^/rt[t]? $")) then
+	elseif (editBoxText:match("^/rtt? $")) then
 		TTell_ReTell();
 	end
 end
@@ -51,15 +51,18 @@ end
 
 local function TTell_AddOnMessage(message)
 	local chatFrame = TTell_GetSelectedChatFrame();
+
 	chatFrame:AddMessage("|c440099ff[TTell]|cff00ffff " .. message);
 end
 
 local function TTell_GetTargetName()
 	local name, realm = UnitName("target");
+
 	if (realm ~= nil and realm:len() > 0) then
 		--local realm = realm:gsub("%s", "");
 		return string.join("-", name, realm);
 	end
+
 	return name;
 end
 
