@@ -1,6 +1,6 @@
-## Interface: 50001
+## Interface: 60200
 ## Title: TTell
 ## Notes: Shortcuts for whispering your current target
 ## Author: Synse
-## Version: 3.13
+## Version: 3.2
 TTell.lua
