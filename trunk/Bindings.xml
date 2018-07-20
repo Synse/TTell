@@ -1,5 +1,5 @@
 <Bindings>
-    <Binding name="TELLTARGET" header="TTELL">
-        TTell_TellTarget();
-    </Binding>
+  <Binding name="TELLTARGET" header="TTELL" category="ADDONS">
+    TTell_TellTarget();
+  </Binding>
 </Bindings>
