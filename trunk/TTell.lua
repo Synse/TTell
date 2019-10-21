@@ -40,13 +40,16 @@ local function TTell_GetSelectedChatFrame()
     end
 
     -- floating SELECTED_CHAT_FRAME bug
-    for i = 0, NUM_CHAT_WINDOWS do
+    for i = 1, NUM_CHAT_WINDOWS do
         local chatFrame = getglobal("ChatFrame" .. i);
         if (chatFrame ~= nil and chatFrame.editBox:IsShown()) then
             --print("SELECTED_CHAT_FRAME should be ChatFrame" .. i .. " was ChatFrame" .. SELECTED_CHAT_FRAME:GetID());
             return chatFrame;
         end
     end
+
+    -- otherwise return SELECTED_CHAT_FRAME
+    return SELECTED_CHAT_FRAME;
 end
 
 local function TTell_AddOnMessage(message)
@@ -74,6 +77,7 @@ local function TTell_NewMessage(tellTarget, message)
         editBox:SetAttribute("chatType", "WHISPER");
         editBox.setText = 1;
         editBox.text = "";
+        editBox:Show();
         editBox:SetFocus();
 
         ChatEdit_UpdateHeader(editBox);
