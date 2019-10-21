@@ -1,6 +1,6 @@
-## Interface: 80100
+## Interface: 80205
 ## Title: TTell
 ## Notes: Shortcuts for whispering your current target
 ## Author: Synse
-## Version: 3.3.1
+## Version: 3.3.2
 TTell.lua
