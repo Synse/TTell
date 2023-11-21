@@ -1,0 +1,6 @@
+## Interface: 11404
+## Title: TTell
+## Notes: Shortcuts for whispering your current target
+## Author: Synse
+## Version: 3.3.3
+TTell.lua
