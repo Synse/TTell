@@ -1,4 +1,4 @@
-## Interface: 100200
+## Interface: 100206
 ## Title: TTell
 ## Notes: Shortcuts for whispering your current target
 ## Author: Synse
