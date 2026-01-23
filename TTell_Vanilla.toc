@@ -2,5 +2,5 @@
 ## Title: TTell
 ## Notes: Shortcuts for whispering your current target
 ## Author: Synse
-## Version: 3.3.9
+## Version: 3.4.0
 TTell.lua
