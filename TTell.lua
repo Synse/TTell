@@ -31,8 +31,18 @@ local function TTell_OnSpacePressed(editBox)
     end
 end
 
--- hook ChatEdit_OnSpacePressed function
-hooksecurefunc("ChatEdit_OnSpacePressed", TTell_OnSpacePressed);
+-- hook ChatEdit_OnSpacePressed for older clients
+if ChatEdit_OnSpacePressed then
+    hooksecurefunc("ChatEdit_OnSpacePressed", TTell_OnSpacePressed);
+else
+    -- hook OnSpacePressed in each chat frame for newer clients
+    for i = 1, NUM_CHAT_WINDOWS do
+        local editBox = _G["ChatFrame"..i.."EditBox"]
+        if editBox then
+            editBox:HookScript("OnSpacePressed", TTell_OnSpacePressed)
+        end
+    end
+end
 
 local function TTell_GetSelectedChatFrame()
     if (SELECTED_CHAT_FRAME.editBox:IsShown()) then
