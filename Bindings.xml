@@ -1,5 +1,5 @@
 <Bindings>
-  <Binding name="TELLTARGET" header="TTELL" category="ADDONS">
+  <Binding name="TELLTARGET" category="Chat">
     TTell_TellTarget();
   </Binding>
 </Bindings>
