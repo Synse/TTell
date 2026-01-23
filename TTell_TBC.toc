@@ -2,7 +2,7 @@
 ## Title: TTell
 ## Notes: Shortcuts for whispering your current target
 ## Author: Synse
-## Version: 3.4.0
+## Version: 3.4.1
 ## Category: Chat
 ## Category-deDE: Chat
 ## Category-esES: Chat
