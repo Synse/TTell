@@ -1,6 +1,5 @@
 -- globals for bindings
-_G.BINDING_HEADER_TTELL = "TTell";
-_G.BINDING_NAME_TELLTARGET = "Whisper Target";
+_G.BINDING_NAME_TELLTARGET = "|c440099ff[TTell]|r Whisper Target";
 
 -- slash commands
 SlashCmdList["TTELL_TELLTARGET"] = function(message)
