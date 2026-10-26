@@ -17,5 +17,6 @@
 ## Category-zhTW: 對話
 ## X-Curse-Project-ID: 3250
 ## X-Wago-ID: O67bLjN3
+## X-WoWI-ID: 6658
 
 TTell.lua
