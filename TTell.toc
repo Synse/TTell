@@ -3,6 +3,7 @@
 ## Notes: Shortcuts for whispering your current target
 ## Author: Synse
 ## Version: 3.5.0
+## IconTexture: Interface\Icons\UI_Chat
 ## Category: Chat
 ## Category-deDE: Chat
 ## Category-esES: Chat
@@ -14,7 +15,6 @@
 ## Category-ruRU: Чат
 ## Category-zhCN: 聊天
 ## Category-zhTW: 對話
-## IconTexture: Interface\Icons\UI_Chat
 ## X-Curse-Project-ID: 3250
 ## X-Wago-ID: O67bLjN3
 
