@@ -15,4 +15,6 @@
 ## Category-zhCN: 聊天
 ## Category-zhTW: 對話
 ## IconTexture: Interface\Icons\UI_Chat
+## X-Curse-Project-ID: 3250
+
 TTell.lua
