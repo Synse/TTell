@@ -2,7 +2,7 @@
 ## Title: TTell
 ## Notes: Shortcuts for whispering your current target
 ## Author: Synse
-## Version: 3.5.0
+## Version: 3.5.1
 ## IconTexture: Interface\Icons\UI_Chat
 ## Category: Chat
 ## Category-deDE: Chat
