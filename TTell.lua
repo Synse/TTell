@@ -107,7 +107,7 @@ end
 
 function TTell_ReTell(message)
     local lastTold = ChatFrameUtil.GetLastToldTarget();
-    if (lastTold ~= "") then
+    if (lastTold ~= nil) then
         TTell_NewMessage(lastTold, message);
     else
         TTell_AddOnMessage("no previous tell target.");
