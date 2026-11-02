@@ -88,8 +88,7 @@ local function TTell_NewMessage(tellTarget, message)
         editBox.text = "";
         editBox:Show();
         editBox:SetFocus();
-
-        ChatEdit_UpdateHeader(editBox);
+        editBox:UpdateHeader();
     else
         local _, languageId = GetDefaultLanguage();
         C_ChatInfo.SendChatMessage(message, "WHISPER", languageId, tellTarget);
