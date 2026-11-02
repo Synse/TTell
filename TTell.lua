@@ -92,7 +92,7 @@ local function TTell_NewMessage(tellTarget, message)
     else
         local _, languageId = GetDefaultLanguage();
         C_ChatInfo.SendChatMessage(message, "WHISPER", languageId, tellTarget);
-        ChatEdit_SetLastToldTarget(tellTarget);
+        ChatFrameUtil.SetLastToldTarget(tellTarget);
     end
 end
 
