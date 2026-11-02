@@ -35,7 +35,7 @@ if ChatEdit_OnSpacePressed then
     hooksecurefunc("ChatEdit_OnSpacePressed", TTell_OnSpacePressed);
 else
     -- hook OnSpacePressed in each chat frame for newer clients
-    for i = 1, NUM_CHAT_WINDOWS do
+    for i = 1, Constants.ChatFrameConstants.MaxChatWindows do
         local editBox = _G["ChatFrame"..i.."EditBox"]
         if editBox then
             editBox:HookScript("OnSpacePressed", TTell_OnSpacePressed)
@@ -49,7 +49,7 @@ local function TTell_GetSelectedChatFrame()
     end
 
     -- floating SELECTED_CHAT_FRAME bug
-    for i = 1, NUM_CHAT_WINDOWS do
+    for i = 1, Constants.ChatFrameConstants.MaxChatWindows do
         local chatFrame = _G["ChatFrame" .. i];
         if (chatFrame ~= nil and chatFrame.editBox:IsShown()) then
             --print("SELECTED_CHAT_FRAME should be ChatFrame" .. i .. " was ChatFrame" .. SELECTED_CHAT_FRAME:GetID());
