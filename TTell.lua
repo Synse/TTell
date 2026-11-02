@@ -52,7 +52,6 @@ local function TTell_GetSelectedChatFrame()
     for i = 1, Constants.ChatFrameConstants.MaxChatWindows do
         local chatFrame = _G["ChatFrame" .. i];
         if (chatFrame ~= nil and chatFrame.editBox:IsShown()) then
-            --print("SELECTED_CHAT_FRAME should be ChatFrame" .. i .. " was ChatFrame" .. SELECTED_CHAT_FRAME:GetID());
             return chatFrame;
         end
     end
