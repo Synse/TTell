@@ -106,7 +106,7 @@ function TTell_TellTarget(message)
 end
 
 function TTell_ReTell(message)
-    local lastTold = ChatEdit_GetLastToldTarget();
+    local lastTold = ChatFrameUtil.GetLastToldTarget();
     if (lastTold ~= "") then
         TTell_NewMessage(lastTold, message);
     else
