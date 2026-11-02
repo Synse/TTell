@@ -91,7 +91,8 @@ local function TTell_NewMessage(tellTarget, message)
 
         ChatEdit_UpdateHeader(editBox);
     else
-        SendChatMessage(message, "WHISPER", GetDefaultLanguage("player"), tellTarget);
+        local _, languageId = GetDefaultLanguage();
+        C_ChatInfo.SendChatMessage(message, "WHISPER", languageId, tellTarget);
         ChatEdit_SetLastToldTarget(tellTarget);
     end
 end
